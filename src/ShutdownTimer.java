@@ -149,8 +149,8 @@ public class ShutdownTimer extends JFrame {
         public void run() {
             try {
                 Thread.sleep(milliseconds);
-                JOptionPane.showMessageDialog(null, "System Shutdown!");
-                //shutdownImmediate();
+//                JOptionPane.showMessageDialog(null, "System Shutdown!");
+                shutdownImmediate();
             } catch (InterruptedException e) {
                 JOptionPane.showMessageDialog(null, "타이머가 종료되었습니다.");
             } catch (Exception e) {
